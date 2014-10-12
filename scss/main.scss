@@ -1,5 +1,53 @@
 @import "normalize";
 
+$ha-red: #a41d21;
+$ha-gold: #c7b572;
+$ha-blue: #81bcd3;
+$ha-black: #282424;
+
 body {
   font-family: 'Fira Sans', sans-serif;
+}
+
+.wrapper-header {
+  background: $ha-red;
+  color: white;
+  min-height: 100px;
+}
+
+.site-title {
+  font-size: 3.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-footer {
+  background: $ha-black;
+  color: white;
+}
+.main-navigation {
+  ul {
+    li { 
+      list-style: none;
+      display: block;
+      margin: 1em;
+    }
+  }
+
+  a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    color: darken(white, 10);
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
 }

@@ -356,3 +356,35 @@ th {
 
 body {
   font-family: 'Fira Sans', sans-serif; }
+
+.wrapper-header {
+  background: #a41d21;
+  color: white;
+  min-height: 100px; }
+
+.site-title {
+  font-size: 3.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 2;
+  margin: 0;
+  padding: 0; }
+
+.wrapper-footer {
+  background: #282424;
+  color: white; }
+
+.main-navigation ul li {
+  list-style: none;
+  display: block;
+  margin: 1em; }
+.main-navigation a:link, .main-navigation a:visited {
+  color: white;
+  text-decoration: none; }
+.main-navigation a:hover, .main-navigation a:active {
+  color: #e6e6e6; }
+
+.container {
+  max-width: 960px;
+  margin: auto; }

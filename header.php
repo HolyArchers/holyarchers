@@ -19,19 +19,30 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'holyarchers' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+<div class="wrapper wrapper-header">
+	<div class="container container-header">
+		<div class="row middle-xs">
+			<div class="col-xs-4">
+				<h1 class="site-title">
+					<?php bloginfo( 'name' ); ?>
+				</h1>
+			</div>
+			<div class="col-xs-8">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<?php wp_nav_menu( array(
+																	'theme_location' => 'primary',
+																	'depth' => 1,
+																	'container' => false,
+																	'menu_class' => 'row end-xs',
+																	)
+														); ?>
+				</nav><!-- #site-navigation -->
+			</div>
 		</div>
+	</div>
+</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'holyarchers' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
