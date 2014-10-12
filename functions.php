@@ -92,7 +92,9 @@ add_action( 'widgets_init', 'holyarchers_widgets_init' );
  * Enqueue scripts and styles.
  */
 function holyarchers_scripts() {
-	wp_enqueue_style( 'flexboxgrid', get_template_directory_uri(). '/bower_components/flexboxgrid/flexboxgrid.min.css', array(), '3.0.2', true);
+	wp_enqueue_style( 'google-fira', 'http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic', array(), '3.0.2');
+	wp_enqueue_style( 'flexboxgrid', get_template_directory_uri(). '/bower_components/flexboxgrid/css/flexboxgrid.min.css', array(), '3.0.2');
+	wp_enqueue_style( 'holyarchers-main', get_template_directory_uri(). '/css/main.css', array(), '3.0.2');
 	wp_enqueue_style( 'holyarchers-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'holyarchers-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
