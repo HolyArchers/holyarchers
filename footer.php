@@ -10,14 +10,43 @@
 
 	</div><!-- #content -->
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <?php if(dynamic_sidebar('footer_left') ): ?>
+
+        <?php else: ?>
+          No Left Sidebar Setup
+        <?php endif; ?>
+      </div>
+
+      <div class="col-sm-3">
+        <?php if(dynamic_sidebar('footer_middle_left') ): ?>
+
+        <?php else: ?>
+          No Mid Sidebar Setup
+        <?php endif; ?>
+      </div>
+
+      <div class="col-sm-3">
+        <?php if(dynamic_sidebar('footer_middle_right') ): ?>
+        <?php else: ?>
+          No Right Sidebar Setup
+        <?php endif; ?>
+      </div>
+      <div class="col-sm-3">
+        <?php if(dynamic_sidebar('footer_right') ): ?>
+        <?php else: ?>
+          No Right Sidebar Setup
+        <?php endif; ?>
+      </div>
+    </div>
+  </div>
+
 
   <div class="wrapper wrapper-footer">
     <div class="container container-footer">
-      <div class="site-info">
-        <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'holyarchers' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'holyarchers' ), 'WordPress' ); ?></a>
-        <span class="sep"> | </span>
-        <?php printf( __( 'Theme: %1$s by %2$s.', 'holyarchers' ), 'holyarchers', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-      </div><!-- .site-info -->
+      Footer
     </div>
   </div>
 

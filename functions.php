@@ -131,6 +131,27 @@ require get_template_directory() . '/inc/jetpack.php';
 
 add_filter( 'show_admin_bar', '__return_false' );
 
+function create_widget( $name, $id, $description ) {
+	$args = array(
+		'name' => __($name),
+		'id'            => $id,
+		'description'   => $description,
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	);
+
+	register_sidebar( $args );
+}
+
+create_widget("Left Footer", "footer_left", "Description of mah foooter");
+create_widget("MiddleLeft Footer", "footer_middle_left", "Description of mid left  foooter");
+create_widget("MiddleRight Footer", "footer_middle_right", "Description of mid right foooter");
+create_widget("Right Footer", "footer_right", "Description of right foooter");
+
+
+
 /*
  * Helper function to return the theme option value. If no value has been saved, it returns $default.
  * Needed because options are saved as serialized strings.

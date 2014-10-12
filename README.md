@@ -6,6 +6,20 @@ I like to develop with OSX, via MAMP. And I used CodeKit for the SASS. This is h
 
 `ln -s ~/[theme-dir]/holyarchers /Applications/MAMP/htdocs/[wordpress-dir]/themes`
 
+## Setup
+
+1. Setup a primary nav
+
+2. Install a bunch of plugins
+
+  * Options Framework
+
+  * Black Studio TinyMCE
+
+3. Configure Widgets
+
+2. Add social media links
+
 
 ## What was here follows below
 Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
