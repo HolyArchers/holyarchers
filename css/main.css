@@ -375,10 +375,12 @@ body {
   background: #282424;
   color: white; }
 
-.main-navigation ul li {
-  list-style: none;
-  display: block;
-  margin: 1em; }
+.main-navigation ul {
+  padding-left: 1em; }
+  .main-navigation ul li {
+    list-style: none;
+    display: block;
+    margin: 1em; }
 .main-navigation a:link, .main-navigation a:visited {
   color: white;
   text-decoration: none; }

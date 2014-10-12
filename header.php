@@ -29,7 +29,7 @@
 				</h1>
 			</div>
 			<div class="col-xs-8">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation row end-xs" role="navigation">
 					<?php wp_nav_menu( array(
 																	'theme_location' => 'primary',
 																	'depth' => 1,
@@ -37,12 +37,40 @@
 																	'menu_class' => 'row end-xs',
 																	)
 														); ?>
-				</nav><!-- #site-navigation -->
+					<ul class="row">
+						<?php if( of_get_option('twitter_url') ):  ?>
+							<li><a href="<?php echo of_get_option('twitter_url'); ?>"><i class="fa fa-twitter"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('facebook_url') ):  ?>
+							<li><a href="<?php echo of_get_option('facebook_url'); ?>"><i class="fa fa-facebook"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('linkedin_url') ):  ?>
+							<li><a href="<?php echo of_get_option('linkedin_url'); ?>"><i class="fa fa-linkedin"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('github_url') ):  ?>
+							<li><a href="<?php echo of_get_option('github_url'); ?>"><i class="fa fa-github"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('dribbble_url') ):  ?>
+							<li><a href="<?php echo of_get_option('dribbble_url'); ?>"><i class="fa fa-dribbble"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('google_url') ):  ?>
+							<li><a href="<?php echo of_get_option('google_url'); ?>"><i class="fa fa-google-plus"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('instagram_url') ):  ?>
+							<li><a href="<?php echo of_get_option('instagram_url'); ?>"><i class="fa fa-instagram"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('rdio_url') ):  ?>
+							<li><a href="<?php echo of_get_option('rdio_url'); ?>"><i class="fa fa-spotify"></i></a></li>
+						<?php endif; ?>
+						<?php if( of_get_option('spotify_url') ):  ?>
+							<li><a href="<?php echo of_get_option('spotify_url'); ?>"><i class="fa fa-spotify"></i></a></li>
+						<?php endif; ?>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>
 </div>
 
-	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
