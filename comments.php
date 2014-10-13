@@ -16,7 +16,12 @@
 if ( post_password_required() ) {
 	return;
 }
+
+/* Turn off comments */
+return;
 ?>
+
+
 
 <div id="comments" class="comments-area">
 
