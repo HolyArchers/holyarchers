@@ -355,7 +355,13 @@ th {
   padding: 0; }
 
 body {
-  font-family: 'Fira Sans', sans-serif; }
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  flex: 1; }
 
 .wrapper-header {
   background: #a41d21;
@@ -391,5 +397,11 @@ body {
   color: #e6e6e6; }
 
 .container {
-  max-width: 960px;
+  width: 960px;
   margin: auto; }
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: inherit;
+    max-width: 960px;
+    margin: auto; } }
