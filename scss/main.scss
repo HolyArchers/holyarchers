@@ -9,11 +9,36 @@ $ha-black: #463F3F;
   font-family: 'abril-titling', serif;
 }
 
+@mixin sans-serif {
+  font-family: 'proxima-nova', sans-serif;
+}
+
 @mixin box {
   background: #FFFFFF;
   -moz-box-shadow:    0px 2px 10px 0px rgba(150,150,150,0.38);
   box-shadow:         0px 2px 10px 0px rgba(150,150,150,0.38);
   padding: 1rem;
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin narrow {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
 }
 
 .box {
@@ -251,4 +276,42 @@ body {
   @include serif;
   font-size: 1.5em;
   text-decoration: none;
+}
+
+.entry-date {
+  @include sans-serif;
+  /* font-weight: bold; */
+  color: #ccc;
+  text-align: right;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  /* text-transform: uppercase; */
+}
+
+.entry-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.7em;
+    a:link, a:visited {
+      text-decoration: none;
+      color: #333;
+    }
+}
+.entry-summary {
+  line-height: 1.5;
+}
+.box-main {
+  padding-left: 8em;
+  padding-right: 8em;
+
+  @include narrow {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }

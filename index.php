@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-<div class="box">
+<div class="box box-main">
 	<div class="wrapper wrapper-content">
 		<div class="container container-content">
 

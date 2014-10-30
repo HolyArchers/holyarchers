@@ -548,3 +548,36 @@ body {
   font-family: 'abril-titling', serif;
   font-size: 1.5em;
   text-decoration: none; }
+
+.entry-date {
+  font-family: 'proxima-nova', sans-serif;
+  /* font-weight: bold; */
+  color: #ccc;
+  text-align: right;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  /* text-transform: uppercase; */ }
+
+.entry-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.7em; }
+  .entry-title a:link, .entry-title a:visited {
+    text-decoration: none;
+    color: #333; }
+
+.entry-summary {
+  line-height: 1.5; }
+
+.box-main {
+  padding-left: 8em;
+  padding-right: 8em; }
+  @media (max-width: 767px) {
+    .box-main {
+      padding-left: 2em;
+      padding-right: 2em; } }
+
+.post {
+  border-bottom: 1px solid #ccc;
+  padding-top: 1em;
+  padding-bottom: 2em; }
