@@ -246,3 +246,9 @@ body {
     padding-left: 1em;
   }
 }
+
+.entry-header {
+  @include serif;
+  font-size: 1.5em;
+  text-decoration: none;
+}

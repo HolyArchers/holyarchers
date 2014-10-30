@@ -543,3 +543,8 @@ body {
     font-size: 0.7em;
     display: block;
     padding-left: 1em; }
+
+.entry-header {
+  font-family: 'abril-titling', serif;
+  font-size: 1.5em;
+  text-decoration: none; }
