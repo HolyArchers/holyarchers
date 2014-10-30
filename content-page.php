@@ -5,7 +5,7 @@
  * @package holyarchers
  */
 ?>
-
+<div class="box box-main">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -13,7 +13,8 @@
 				'after'  => '</div>',
 			) );
 		?>
-	<footer class="entry-footer">
-		<?php edit_post_link( __( 'Edit', 'holyarchers' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+		<footer class="entry-footer">
+			<?php edit_post_link( __( 'Edit', 'holyarchers' ), '<span class="edit-link">', '</span>' ); ?>
+		</footer><!-- .entry-footer -->
+	</article><!-- #post-## -->
+</div>
