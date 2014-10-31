@@ -26,6 +26,11 @@
 		<input type="text" name="s" />
 	</form>
 </div>
+<div id="mobile-menu" class="menu-hide">
+	<div class="close"><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+	<ul class="menu-social"></ul>
+	<ul class="menu-pages"></ul>
+</div>
 <div class="wrapper wrapper-header">
 	<div class="container container-header">
 		<div class="row middle-xs">
@@ -42,13 +47,14 @@
 																	'depth' => 1,
 																	'container' => false,
 																	'menu_class' => 'pages-nav pull-left hide-mobile',
+																	'menu_id' => 'menu-pages'
 																	)
 														); ?>
 					<ul class="pull-right">
-						<li class="only-mobile"><a href="#"><i class="fa fa-bars"></i> Menu</a></li>
+						<li class="only-mobile"><a href="#" id="show-menu"><i class="fa fa-bars"></i> Menu</a></li>
 						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 					</ul>
-					<ul class="pull-right hide-mobile">
+					<ul class="pull-right hide-mobile" id="menu-social">
 						<?php if( of_get_option('twitter_url') ):  ?>
 							<li><a href="<?php echo of_get_option('twitter_url'); ?>"><i class="fa fa-twitter"></i></a></li>
 						<?php endif; ?>
