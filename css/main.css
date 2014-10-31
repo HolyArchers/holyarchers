@@ -625,28 +625,29 @@ blockquote {
   margin: 0;
   padding: .5em 2em; }
 
-ol {
+.content-area ol, .content-area ul {
   border-top: 1px solid #c5bfbf;
   border-bottom: 1px solid #c5bfbf;
-  padding: 0;
-  counter-reset: ordered-list; }
-  ol li {
+  padding: 0; }
+  .content-area ol li, .content-area ul li {
     border-bottom: 1px solid #e9e7e7;
     padding: 0.7em 2em;
     list-style: none; }
-    ol li:before {
-      font-family: 'abril-titling', serif;
-      /* font-style: italic; */
-      font-weight: 300;
-      content: counter(ordered-list);
-      counter-increment: ordered-list;
-      display: block;
-      margin-left: -43px;
-      padding: 0 30px;
-      float: left;
-      color: #81bcd3;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 28px; }
-    ol li:last-child {
-      border: none; }
+.content-area ol {
+  counter-reset: ordered-list; }
+.content-area ol li:before {
+  font-family: 'abril-titling', serif;
+  /* font-style: italic; */
+  font-weight: 300;
+  content: counter(ordered-list);
+  counter-increment: ordered-list;
+  display: block;
+  margin-left: -43px;
+  padding: 0 30px;
+  float: left;
+  color: #81bcd3;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px; }
+.content-area ol li:last-child {
+  border: none; }

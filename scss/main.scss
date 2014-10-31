@@ -372,15 +372,22 @@ blockquote {
   padding: .5em 2em;
 }
 
-ol {
-  border-top: 1px solid lighten($ha-black, 50);
-  border-bottom: 1px solid lighten($ha-black, 50);
-  padding: 0;
-  counter-reset: ordered-list;
-  li {
-    border-bottom: 1px solid  lighten($ha-black, 65);
-    padding: 0.7em 2em;
-    list-style: none;
+.content-area {
+  ol, ul {
+    border-top: 1px solid lighten($ha-black, 50);
+    border-bottom: 1px solid lighten($ha-black, 50);
+    padding: 0;
+    li {
+      border-bottom: 1px solid  lighten($ha-black, 65);
+      padding: 0.7em 2em;
+      list-style: none;
+    }
+  }
+
+  ol {
+    counter-reset: ordered-list;
+  }
+  ol li {
     &:before {
       @include serif;
       /* font-style: italic; */
@@ -400,4 +407,5 @@ ol {
       border: none;
     }
   }
+
 }
