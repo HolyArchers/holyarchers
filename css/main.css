@@ -560,12 +560,13 @@ body {
 
 .entry-date {
   font-family: 'proxima-nova', sans-serif;
-  /* font-weight: bold; */
-  color: #ccc;
+  font-size: 0.6em;
+  color: #B51414;
   text-align: right;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
-  /* text-transform: uppercase; */ }
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
 
 .entry-title {
   margin-top: 0;
@@ -576,7 +577,8 @@ body {
     color: #333; }
 
 .entry-summary {
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #C8C8C8; }
 
 .box-main {
   padding-left: 8em;
@@ -588,5 +590,5 @@ body {
 
 .post {
   border-bottom: 1px solid #ccc;
-  padding-top: 1em;
-  padding-bottom: 2em; }
+  padding-top: 2em;
+  padding-bottom: 4em; }
