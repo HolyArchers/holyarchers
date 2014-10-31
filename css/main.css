@@ -495,7 +495,11 @@ body {
 
 .container {
   max-width: 960px;
-  margin: auto; }
+  margin: auto;
+  word-wrap: break-word; }
+  @media (max-width: 767px) {
+    .container {
+      margin: inherit; } }
 
 .row {
   min-width: 960px; }
