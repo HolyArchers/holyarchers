@@ -274,11 +274,15 @@ body {
       margin-top: 0.5em;
       margin-bottom: 0.2em;
     }
-    img {
+    .profile-pic {
       margin: auto;
       width: 120px;
       height: 120px;
       border-radius: 50%;
+    }
+    .profile-ryan {
+      background: url("../img/profile-ryan.jpg");
+      background-size: auto 100%;
     }
   }
 }

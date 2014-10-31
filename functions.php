@@ -185,3 +185,6 @@ function gen_rss_link() {
 	echo "<a href='".$url."'><i class='fa fa-rss'></i></a>";
 }
 add_shortcode('rsslink', 'gen_rss_link');
+
+
+add_shortcode('profile_image_path', 'get_theme_root_uri');

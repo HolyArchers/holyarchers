@@ -548,11 +548,14 @@ body {
       font-size: 0.8em;
       margin-top: 0.5em;
       margin-bottom: 0.2em; }
-    .container-widgets .container-about img {
+    .container-widgets .container-about .profile-pic {
       margin: auto;
       width: 120px;
       height: 120px;
       border-radius: 50%; }
+    .container-widgets .container-about .profile-ryan {
+      background: url("../img/profile-ryan.jpg");
+      background-size: auto 100%; }
 
 .display-posts-listing {
   border-top: 1px solid #eee; }
