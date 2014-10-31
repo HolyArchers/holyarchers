@@ -711,6 +711,9 @@ body.search-active .search-bar {
   top: 0;
   left: 0; }
 
+@media all and (min-width: 768px) {
+  #mobile-menu {
+    display: none !important; } }
 #mobile-menu {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;

@@ -484,8 +484,14 @@ body.search-active {
   left: 0;
 }
 
-
+@media all and (min-width: $tablet-width) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
 #mobile-menu {
+
+
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   &.menu-hide {
