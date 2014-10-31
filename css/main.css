@@ -679,3 +679,13 @@ body.search-active .search-bar {
     color: white;
     font-size: 4em;
     line-height: 2em; }
+
+.only-mobile {
+  display: none !important; }
+  @media (max-width: 767px) {
+    .only-mobile {
+      display: inherit !important; } }
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important; } }

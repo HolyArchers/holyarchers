@@ -41,10 +41,14 @@
 																	'theme_location' => 'primary',
 																	'depth' => 1,
 																	'container' => false,
-																	'menu_class' => 'pages-nav pull-left',
+																	'menu_class' => 'pages-nav pull-left hide-mobile',
 																	)
 														); ?>
 					<ul class="pull-right">
+						<li class="only-mobile"><a href="#"><i class="fa fa-bars"></i> Menu</a></li>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+					</ul>
+					<ul class="pull-right hide-mobile">
 						<?php if( of_get_option('twitter_url') ):  ?>
 							<li><a href="<?php echo of_get_option('twitter_url'); ?>"><i class="fa fa-twitter"></i></a></li>
 						<?php endif; ?>
@@ -72,7 +76,7 @@
 						<?php if( of_get_option('spotify_url') ):  ?>
 							<li><a href="<?php echo of_get_option('spotify_url'); ?>"><i class="fa fa-spotify"></i></a></li>
 						<?php endif; ?>
-						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+
 					</ul>
 				</nav>
 			</div>
