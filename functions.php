@@ -175,3 +175,13 @@ if ( !function_exists( 'of_get_option' ) ) {
 		}
 	}
 }
+
+function gen_rss_link() {
+	ob_start();
+	bloginfo('atom_url');
+	$url = ob_get_contents();
+	ob_end_clean();
+
+	echo "<a href='".$url."'><i class='fa fa-rss'></i></a>";
+}
+add_shortcode('rsslink', 'gen_rss_link');

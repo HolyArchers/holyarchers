@@ -671,3 +671,11 @@ blockquote {
 
 body.search-active .search-bar {
   height: 60px; }
+
+.box-highlight {
+  background: #c7b572;
+  text-align: center; }
+  .box-highlight a {
+    color: white;
+    font-size: 4em;
+    line-height: 2em; }

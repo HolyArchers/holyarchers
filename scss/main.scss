@@ -435,3 +435,14 @@ body.search-active {
     height: 60px;
   }
 }
+
+.box-highlight {
+  background: $ha-gold;
+  text-align: center;
+  a {
+    color: white;
+    font-size: 4em;
+    line-height: 2em;
+
+  }
+}

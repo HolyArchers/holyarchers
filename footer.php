@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="col-sm-3">
-        <div class="box">
+        <div class="box box-highlight">
           <?php if(dynamic_sidebar('footer_right') ): ?>
           <?php else: ?>
             No Right Sidebar Setup
