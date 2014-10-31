@@ -6,11 +6,10 @@
 <div class="box box-main">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-			<div class="entry-meta">
-				<?php holyarchers_posted_on(); ?>
+			<div class="entry-date">
+				<?php the_time('l, F jS, Y') ?>
 			</div><!-- .entry-meta -->
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
