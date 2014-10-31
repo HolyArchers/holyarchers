@@ -448,6 +448,13 @@ body {
     height: 22px;
     margin-right: 0.2em;
     background: white; }
+  @media (max-width: 767px) {
+    .site-title, h1.site-title {
+      margin-left: 0.5em;
+      font-size: 1.2em;
+      line-height: 1.9; }
+      .site-title img, h1.site-title img {
+        height: 14px; } }
 
 .wrapper-footer {
   font-family: 'abril-titling', serif;
