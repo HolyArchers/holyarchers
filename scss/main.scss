@@ -108,6 +108,12 @@ body {
   }
 }
 
+.entry-content {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
 .wrapper-header {
   background: $ha-black;
   color: white;
@@ -131,7 +137,8 @@ body {
   img {
     display: inline;
     height: 22px;
-    margin-right: 0.1em;
+    margin-right: 0.2em;
+    background: white;
   }
 }
 
@@ -237,8 +244,9 @@ body {
     p {
       color: #aaa;
       line-height: 1.4;
-      font-weight: 100;
+      font-weight: 300;
       text-align: center;
+      font-size: 0.8em;
     }
     img {
       width: 120px;
@@ -261,8 +269,8 @@ body {
   }
   a.title:link, a.title:visited  {
     color: #aaa;
-    font-weight: 100;
-    font-size: .9em;
+    font-weight: 300;
+    font-size: .8em;
     text-decoration: none;
   }
   .date {

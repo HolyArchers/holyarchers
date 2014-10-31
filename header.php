@@ -28,7 +28,9 @@
 			<div class="col-xs-12 cf">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<h1 class="site-title pull-left">
-						<img src="<?php echo get_template_directory_uri() . "/img/ha-badge.svg"; ?>" onerror="this.onerror=null; this.src='image.png'" /><?php bloginfo( 'name' ); ?>
+						<a href="<?php bloginfo('url');?>">
+							<img src="<?php echo get_template_directory_uri() . "/img/ha-badge.svg"; ?>" onerror="this.onerror=null; this.src='image.png'" /><?php bloginfo( 'name' ); ?>
+						</a>
 					</h1>
 
 					<?php wp_nav_menu( array(
