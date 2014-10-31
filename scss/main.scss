@@ -233,12 +233,15 @@ body {
   }
 
   .container-about {
+    margin-bottom: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     h1 {
       @include serif;
       text-transform: uppercase;
       line-height: 1;
-      margin-top: 1em;
       margin-bottom: 0;
+      margin-top: 0;
     }
     h2 {
       @include serif;
@@ -247,24 +250,22 @@ body {
       line-height: 1;
       margin-top: 0;
       margin-bottom: 0;
-      text-align: center;
+      text-align: left;
     }
     p {
       color: #aaa;
       line-height: 1.4;
       font-weight: 300;
-      text-align: center;
+      text-align: left;
       font-size: 0.8em;
+      margin-top: 0.5em;
+      margin-bottom: 0.2em;
     }
     img {
+      margin: auto;
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
     }
   }
 }

@@ -511,35 +511,37 @@ body {
   position: relative; }
   .container-widgets img {
     max-width: 100%; }
-  .container-widgets .container-about h1 {
-    font-family: 'abril-titling', serif;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-top: 1em;
-    margin-bottom: 0; }
-  .container-widgets .container-about h2 {
-    font-family: 'abril-titling', serif;
-    color: #a41d21;
-    font-size: 1em;
-    line-height: 1;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center; }
-  .container-widgets .container-about p {
-    color: #aaa;
-    line-height: 1.4;
-    font-weight: 300;
-    text-align: center;
-    font-size: 0.8em; }
-  .container-widgets .container-about img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+  .container-widgets .container-about {
+    margin-bottom: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em; }
+    .container-widgets .container-about h1 {
+      font-family: 'abril-titling', serif;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 0; }
+    .container-widgets .container-about h2 {
+      font-family: 'abril-titling', serif;
+      color: #a41d21;
+      font-size: 1em;
+      line-height: 1;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left; }
+    .container-widgets .container-about p {
+      color: #aaa;
+      line-height: 1.4;
+      font-weight: 300;
+      text-align: left;
+      font-size: 0.8em;
+      margin-top: 0.5em;
+      margin-bottom: 0.2em; }
+    .container-widgets .container-about img {
+      margin: auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; }
 
 .display-posts-listing {
   border-top: 1px solid #eee; }

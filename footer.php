@@ -13,7 +13,7 @@
 
   <div class="container container-widgets">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6 col-sm-12 col-xs-12">
         <div class="box container-about">
           <?php if(dynamic_sidebar('footer_left') ): ?>
 
@@ -33,7 +33,7 @@
         </div>
       </div> -->
 
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="box">
           <?php if(dynamic_sidebar('footer_middle_right') ): ?>
           <?php else: ?>
@@ -41,7 +41,7 @@
           <?php endif; ?>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="box box-highlight">
           <?php if(dynamic_sidebar('footer_right') ): ?>
           <?php else: ?>
