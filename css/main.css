@@ -476,7 +476,7 @@ body {
 .main-navigation .search {
   margin: 0;
   padding: 1em;
-  background: rgba(0, 0, 0, 0.3);
+  background: #2b2727;
   cursor: pointer; }
 
 .pages-nav {
@@ -651,3 +651,23 @@ blockquote {
   line-height: 28px; }
 .content-area ol li:last-child {
   border: none; }
+
+.search-bar {
+  background: #2b2727;
+  -webkit-transition: all 0.1s ease-in;
+  height: 0; }
+  .search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 30px;
+    overflow: hidden;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
+
+body.search-active .search-bar {
+  height: 60px; }

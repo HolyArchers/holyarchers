@@ -7,8 +7,10 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="box box-main">
+	<div class="wrapper wrapper-content">
+		<div class="container container-content">
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -37,8 +39,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
+		</div>
+	</div>
+</div>
 <?php get_footer(); ?>

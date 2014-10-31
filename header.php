@@ -21,7 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<div class="search-bar">
+	<form role="search" method="get" action="<?php echo get_site_url(); ?>">
+		<input type="text" name="s" />
+	</form>
+</div>
 <div class="wrapper wrapper-header">
 	<div class="container container-header">
 		<div class="row middle-xs">
