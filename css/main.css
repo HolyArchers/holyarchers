@@ -410,7 +410,8 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-size: 1.1em;
-  background: #ccc url("../img/noise.png"); }
+  background: #ccc url("../img/noise.png");
+  background-size: 60px 60px; }
 
 .site-content {
   flex: 1;
