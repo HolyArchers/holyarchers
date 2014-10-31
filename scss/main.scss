@@ -362,3 +362,12 @@ body {
     float: right;
   }
 }
+
+blockquote {
+  @include serif;
+  color: #aaa;
+  font-style: italic;
+  box-shadow: -3px 0 0 $ha-blue;
+  margin: 0;
+  padding: .5em 2em;
+}

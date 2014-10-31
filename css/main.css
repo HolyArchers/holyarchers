@@ -616,3 +616,11 @@ body {
   float: left; }
 .nav-links .nav-next {
   float: right; }
+
+blockquote {
+  font-family: 'abril-titling', serif;
+  color: #aaa;
+  font-style: italic;
+  box-shadow: -3px 0 0 #81bcd3;
+  margin: 0;
+  padding: .5em 2em; }
