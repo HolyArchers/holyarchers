@@ -24,6 +24,7 @@
 
 		<footer class="entry-footer">
 			<?php holyarchers_entry_footer(); ?>
+			<?php holyarchers_post_nav(); ?>
 		</footer><!-- .entry-footer -->
 	</article><!-- #post-## -->
 </div>
