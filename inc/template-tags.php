@@ -50,7 +50,7 @@ function holyarchers_post_nav() {
 	?>
 	<nav class="navigation post-navigation" role="navigation">
 		<!-- <h1 class="screen-reader-text"><?php _e( 'Post navigation', 'holyarchers' ); ?></h1> -->
-		<div class="nav-links">
+		<div class="nav-links cf">
 			<?php
 				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'holyarchers' ) );
 				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'holyarchers' ) );
