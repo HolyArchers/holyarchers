@@ -52,6 +52,14 @@ $desktop-width: 1024px;
 
 .box {
   @include box;
+  display: flex;
+  min-height: 230px;
+  .row {
+    min-height: 230px;
+    .col-xs-8 {
+      margin-top: 1.2em;
+    }
+  }
 }
 
 /**
@@ -246,9 +254,9 @@ body {
   }
 
   .container-about {
-    margin-bottom: 1em;
-    padding-top: 3em;
-    padding-bottom: 3em;
+/*     margin-bottom: 1em;
+padding-top: 3em;
+padding-bottom: 3em; */
     h1 {
       @include serif;
       text-transform: uppercase;
@@ -457,11 +465,12 @@ body.search-active {
 .box-highlight {
   background: $ha-gold;
   text-align: center;
+
   a {
     color: white;
-    font-size: 4em;
+    font-size: 6em;
     line-height: 2em;
-
+    margin: auto;
   }
 }
 
