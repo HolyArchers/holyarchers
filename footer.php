@@ -55,7 +55,7 @@
 
   <div class="wrapper wrapper-footer">
     <div class="container container-footer cf">
-      &copy; <?php echo bloginfo("name"); ?> <?php echo date("Y"); ?>. All rights reserved (whatever that means)
+      &copy; <?php echo bloginfo("name"); ?> <?php echo date("Y"); ?>
       <a href="http://holyarchers.com"><img class="footer-ha-badge pull-right" src="<?php echo get_template_directory_uri() . "/img/ha-badge.svg"; ?>" onerror="this.onerror=null; this.src='image.png'" /></a>
     </div>
   </div>
