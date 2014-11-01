@@ -33,14 +33,14 @@ body {
 .site-content {
   h1 {
     font-size: rem(41.887);
-    margin-top: rem(16);
+    margin-top: rem(25.888);
     margin-bottom: rem(16);
     line-height: rem(41.887);
   }
   p {
     font-size: rem(25.888);
     line-height: rem(41.887);
-    margin-top: rem(32.360);
+    margin-top: rem(0);
     margin-bottom: rem(32.360);
   }
 
@@ -97,10 +97,10 @@ a:hover, a:active {
   font-size: rem(20);
 }
 
-h1 a:link, h1 a:visited {
+/* h1 a:link, h1 a:visited {
   font-size: rem(32);
 }
-
+ */
 
 .box {
   @include box;
