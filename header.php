@@ -51,7 +51,7 @@
 																	)
 														); ?>
 					<ul class="pull-right">
-						<li class="only-mobile"><a href="#" id="show-menu"><i class="fa fa-bars"></i> Menu</a></li>
+						<li class="only-mobile menu-btn"><a href="#" id="show-menu"><i class="fa fa-bars"></i> Menu</a></li>
 						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 					</ul>
 					<ul class="pull-right hide-mobile" id="menu-social">

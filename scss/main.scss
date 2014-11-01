@@ -1,9 +1,33 @@
+@import "variables";
 @import "normalize";
+@import "utilities";
+@import "mediaqueries";
+@import "mixins";
 
-$ha-red: #a41d21;
-$ha-gold: #c7b572;
-$ha-blue: #81bcd3;
-$ha-black: #463F3F;
+
+/* Base Responive Type*/
+html {
+  font-size: 100%;
+
+  @include tablet {
+    font-size: 0.8em;
+  }
+  @include narrow {
+    font-size: 0.7em;
+  }
+}
+
+
+/* Defaults */
+body {
+  font-family: 'proxima-nova', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #ccc url('../img/noise.png');
+  background-size: 60px 60px;
+
+}
 
 a:link, a:visited {
   color: $ha-blue;
@@ -12,43 +36,14 @@ a:hover, a:active {
   color: darken($ha-blue, 10);
 }
 
-@mixin serif {
-  font-family: 'abril-titling', serif;
+.entry-content {
+  font-size: rem(20);
 }
 
-@mixin sans-serif {
-  font-family: 'proxima-nova', sans-serif;
+h1 a:link, h1 a:visited {
+  font-size: rem(32);
 }
 
-@mixin box {
-  background: #FFFFFF;
-  -moz-box-shadow:    0px 2px 10px 0px rgba(150,150,150,0.38),
-                      0 -2px 0 rgba(0,0,0,0.2) inset;
-  box-shadow:         0px 2px 10px 0px rgba(150,150,150,0.38),
-                      0 -2px 0 rgba(0,0,0,0.3) inset;
-  padding: 1rem;
-}
-
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-@mixin narrow {
-  @media (max-width: #{$tablet-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin wide {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
 
 .box {
   @include box;
@@ -62,39 +57,6 @@ $desktop-width: 1024px;
   }
 }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
-
-.pull-left {
-  float: left;
-}
-.pull-right {
-  float: right;
-}
 .main-navigation {
   ul {
     display: inline-block;
@@ -105,17 +67,6 @@ $desktop-width: 1024px;
   }
 }
 
-body {
-  font-family: 'proxima-nova', sans-serif;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  font-size: 1.1em;
-  background: #ccc url('../img/noise.png');
-  background-size: 60px 60px;
-}
-
-
 .site-content {
   flex: 1;
   /* Rectangle 8: */
@@ -125,7 +76,6 @@ body {
 }
 
 .entry-content {
-  font-size: 20px;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -200,9 +150,12 @@ body {
 
   .search {
     margin: 0;
-    padding: 1em;
+    padding: 1.1rem;
     background: darken($ha-black, 10);
     cursor: pointer;
+    @include narrow {
+      padding: 1.7rem;
+    }
   }
 }
 
@@ -540,5 +493,11 @@ body.search-active {
       border-bottom: 1px solid rgba(255,255,255,0.3);
       padding: 1em;
     }
+  }
+}
+
+.menu-btn {
+  @include narrow {
+    margin: 1.7rem !important;
   }
 }
