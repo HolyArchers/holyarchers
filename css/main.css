@@ -404,22 +404,21 @@ body {
   background: #ccc url("../img/noise.png");
   background-size: 60px 60px; }
 
-.site-content h1 {
+article h1, .site-content h1 {
+  font-family: 'abril-titling', serif;
   font-size: 2.6179375rem;
   margin-top: 1.618rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   line-height: 2.6179375rem; }
-.site-content p {
+article p, .site-content p {
   font-size: 1.618rem;
   line-height: 2.6179375rem;
   margin-top: 0rem;
   margin-bottom: 2.0225rem; }
-.site-content p + p {
+article p + p, .site-content p + p {
   /* margin-top: rem(-6); */ }
 
 .entry-header {
-  font-family: 'abril-titling', serif;
-  font-size: 1.5em;
   text-decoration: none; }
 
 .entry-date {
@@ -436,7 +435,6 @@ body {
 .entry-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.7em;
   color: #463F3F; }
   .entry-title a:link, .entry-title a:visited {
     text-decoration: none;
@@ -508,14 +506,13 @@ a:hover, a:active {
   letter-spacing: 0.01em; }
   .site-title img, h1.site-title img {
     display: inline;
-    height: 22px;
+    height: 1.375rem;
     margin-right: 0.2em;
     background: white; }
   @media (max-width: 767px) {
     .site-title, h1.site-title {
       margin-left: 0.5em;
-      font-size: 1.2em;
-      line-height: 1.9; }
+      line-height: 1.7; }
       .site-title img, h1.site-title img {
         height: 14px; } }
 
@@ -584,6 +581,23 @@ a:hover, a:active {
   height: 22px;
   display: block; }
 
+.profile-pic {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; }
+
+.profile-ryan {
+  background: url("../img/profile-ryan.jpg");
+  background-size: auto 100%; }
+
+.profile-pic-large {
+  width: 17.942125rem;
+  height: 17.942125rem; }
+
+.profile-pic.pull-right {
+  margin-left: 1.25rem; }
+
 .container-widgets {
   position: relative; }
   .container-widgets img {
@@ -612,14 +626,6 @@ a:hover, a:active {
       font-size: 0.9em;
       margin-top: 0.5em;
       margin-bottom: 0.2em; }
-    .container-widgets .container-about .profile-pic {
-      margin: auto;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%; }
-    .container-widgets .container-about .profile-ryan {
-      background: url("../img/profile-ryan.jpg");
-      background-size: auto 100%; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .container-widgets .container-about {
         font-size: 1.618rem;

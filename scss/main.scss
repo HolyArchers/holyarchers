@@ -30,11 +30,12 @@ body {
 
 }
 
-.site-content {
+article, .site-content {
   h1 {
+    @include serif;
     font-size: rem(41.887);
     margin-top: rem(25.888);
-    margin-bottom: rem(16);
+    margin-bottom: rem(12);
     line-height: rem(41.887);
   }
   p {
@@ -50,8 +51,6 @@ body {
 }
 
 .entry-header {
-  @include serif;
-  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -72,7 +71,6 @@ body {
 .entry-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.7em;
     color: $ha-black;
     a:link, a:visited {
       text-decoration: none;
@@ -159,15 +157,15 @@ a:hover, a:active {
   letter-spacing: 0.01em;
   img {
     display: inline;
-    height: 22px;
+    height: rem(22);
     margin-right: 0.2em;
     background: white;
   }
 
+
   @include narrow {
     margin-left: 0.5em;
-    font-size: 1.2em;
-    line-height: 1.9;
+    line-height: 1.7;
     img {
       height: 14px;
     }
@@ -257,6 +255,24 @@ a:hover, a:active {
   display: block;
 }
 
+.profile-pic {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.profile-ryan {
+  background: url("../img/profile-ryan.jpg");
+  background-size: auto 100%;
+}
+.profile-pic-large {
+  width: rem(287.074);
+  height: rem(287.074);
+}
+
+.profile-pic.pull-right {
+  margin-left: rem(20);
+}
 .container-widgets {
   position: relative;
   img {
@@ -289,16 +305,6 @@ padding-bottom: 3em; */
       font-size: 0.9em;
       margin-top: 0.5em;
       margin-bottom: 0.2em;
-    }
-    .profile-pic {
-      margin: auto;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-    }
-    .profile-ryan {
-      background: url("../img/profile-ryan.jpg");
-      background-size: auto 100%;
     }
 
     @include tablet {
