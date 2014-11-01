@@ -2,7 +2,7 @@
 !(function($) {
   $(function() {
     // $("body").addClass("search-active");
-    $(".search").on("click", function() {
+    $(".search-btn").on("click", function() {
         $("body").toggleClass("search-active");
         $(".search-bar input").focus();
     });
