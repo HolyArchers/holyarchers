@@ -32,7 +32,7 @@ body {
 
 article, .site-content {
   h1 {
-    @include serif;
+    @include serif-heading;
     font-size: rem(41.887);
     margin-top: rem(25.888);
     margin-bottom: rem(12);

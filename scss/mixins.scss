@@ -1,5 +1,9 @@
-@mixin serif {
+@mixin serif-heading {
   font-family: 'abril-titling', serif;
+}
+
+@mixin serif {
+  font-family: 'abril-text', serif;
 }
 
 @mixin sans-serif {

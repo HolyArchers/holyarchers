@@ -517,7 +517,7 @@ a:hover, a:active {
         height: 14px; } }
 
 .wrapper-footer {
-  font-family: 'abril-titling', serif;
+  font-family: 'abril-text', serif;
   background: #463F3F;
   font-size: 0.8em;
   font-style: italic;
@@ -550,7 +550,7 @@ a:hover, a:active {
       padding: 1.7rem; } }
 
 .pages-nav {
-  font-family: 'abril-titling', serif;
+  font-family: 'abril-text', serif;
   font-style: italic;
   font-size: 0.9em; }
   .pages-nav a:link, .pages-nav a:visited {
@@ -607,13 +607,13 @@ a:hover, a:active {
     /*padding-top: 3em;
     padding-bottom: 3em; */ }
     .container-widgets .container-about h1 {
-      font-family: 'abril-titling', serif;
+      font-family: 'abril-text', serif;
       text-transform: uppercase;
       line-height: 1;
       margin-bottom: 0;
       margin-top: 2rem; }
     .container-widgets .container-about h2 {
-      font-family: 'abril-titling', serif;
+      font-family: 'abril-text', serif;
       color: #a41d21;
       font-size: 1em;
       line-height: 1;
@@ -684,7 +684,7 @@ a:hover, a:active {
         margin-top: 0rem;
         margin-bottom: 2.0225rem; } }
   .display-posts-listing .date {
-    font-family: 'abril-titling', serif;
+    font-family: 'abril-text', serif;
     font-style: italic;
     color: #a41d21;
     font-weight: bold;
@@ -725,7 +725,7 @@ a:hover, a:active {
   float: right; }
 
 blockquote {
-  font-family: 'abril-titling', serif;
+  font-family: 'abril-text', serif;
   color: #aaa;
   font-style: italic;
   box-shadow: -3px 0 0 #81bcd3;
@@ -743,7 +743,7 @@ blockquote {
 .content-area ol {
   counter-reset: ordered-list; }
 .content-area ol li:before {
-  font-family: 'abril-titling', serif;
+  font-family: 'abril-text', serif;
   /* font-style: italic; */
   font-weight: 300;
   content: counter(ordered-list);
