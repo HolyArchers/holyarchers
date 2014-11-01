@@ -147,7 +147,7 @@ a:hover, a:active {
 }
 
 .site-title, h1.site-title {
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 2;
@@ -187,7 +187,7 @@ a:hover, a:active {
 }
 .main-navigation {
   ul {
-    padding-left: 1em;
+    padding-left: 0.5em;
     margin-top: 0;
     margin-bottom: 0;
     li {
@@ -264,8 +264,8 @@ a:hover, a:active {
   }
 
   .container-about {
-/*     margin-bottom: 1em;
-padding-top: 3em;
+     margin-bottom: 1em;
+/*padding-top: 3em;
 padding-bottom: 3em; */
     h1 {
       @include serif;
@@ -281,13 +281,11 @@ padding-bottom: 3em; */
       line-height: 1;
       margin-top: 0;
       margin-bottom: 0;
-      text-align: left;
     }
     p {
       color: #aaa;
       line-height: 1.4;
       font-weight: 300;
-      text-align: left;
       font-size: 0.9em;
       margin-top: 0.5em;
       margin-bottom: 0.2em;
@@ -301,6 +299,42 @@ padding-bottom: 3em; */
     .profile-ryan {
       background: url("../img/profile-ryan.jpg");
       background-size: auto 100%;
+    }
+
+    @include tablet {
+      font-size: rem(25.888);
+      line-height: rem(41.887);
+      margin-top: rem(0);
+      margin-bottom: rem(32.360);
+      padding-bottom: rem(32);
+
+      .profile-pic {
+        margin: auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+
+    }
+
+    @include narrow {
+      font-size: rem(25.888);
+      line-height: rem(41.887);
+      h1 {
+        margin-top: rem(20);
+      }
+      margin-top: rem(20);
+      margin-bottom: rem(32.360);
+      padding-bottom: rem(32);
+      padding-left: rem(20);
+      padding-right: rem(20);
+      text-align: center;
+      .profile-pic {
+        margin: auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
     }
   }
 }
@@ -322,6 +356,19 @@ padding-bottom: 3em; */
     font-weight: 300;
     font-size: 0.9em;
     text-decoration: none;
+
+    @include tablet {
+      font-size: rem(25.888);
+      line-height: rem(41.887);
+      margin-top: rem(0);
+      margin-bottom: rem(32.360);
+    }
+    @include narrow {
+      font-size: rem(25.888);
+      line-height: rem(41.887);
+      margin-top: rem(0);
+      margin-bottom: rem(32.360);
+    }
   }
   .date {
     @include serif;
@@ -334,7 +381,9 @@ padding-bottom: 3em; */
   }
 }
 
-
+.widget {
+  width: 100%;
+}
 .post {
   border-bottom: 1px solid #E0E0E0;
   padding-top: rem(20);
@@ -456,6 +505,7 @@ body.search-active {
     font-size: 6em;
     line-height: 2em;
     margin: auto;
+    width: 100%;
   }
 }
 
