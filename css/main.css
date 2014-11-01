@@ -611,7 +611,7 @@ a:hover, a:active {
       text-transform: uppercase;
       line-height: 1;
       margin-bottom: 0;
-      margin-top: 0; }
+      margin-top: 2rem; }
     .container-widgets .container-about h2 {
       font-family: 'abril-titling', serif;
       color: #a41d21;
