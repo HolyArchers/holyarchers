@@ -610,7 +610,7 @@ h1 a:link, h1 a:visited {
       line-height: 1.4;
       font-weight: 300;
       text-align: left;
-      font-size: 0.8em;
+      font-size: 0.9em;
       margin-top: 0.5em;
       margin-bottom: 0.2em; }
     .container-widgets .container-about .profile-pic {
@@ -625,19 +625,24 @@ h1 a:link, h1 a:visited {
 .display-posts-listing {
   border-top: 1px solid #eee; }
   .display-posts-listing .listing-item {
+    position: relative;
     border-bottom: 1px solid #eee;
-    padding: .3em 0; }
+    padding: .3rem 0;
+    padding-top: 1.1rem; }
+    .display-posts-listing .listing-item .date {
+      position: absolute;
+      top: 0.3rem; }
   .display-posts-listing a.title:link, .display-posts-listing a.title:visited {
     color: #aaa;
     font-weight: 300;
-    font-size: .8em;
+    font-size: 0.9em;
     text-decoration: none; }
   .display-posts-listing .date {
     font-family: 'abril-titling', serif;
     font-style: italic;
     color: #a41d21;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.4rem;
     display: block;
     padding-left: 1em; }
 

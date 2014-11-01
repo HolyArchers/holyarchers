@@ -188,3 +188,12 @@ add_shortcode('rsslink', 'gen_rss_link');
 
 
 add_shortcode('profile_image_path', 'get_theme_root_uri');
+
+function custom_excerpt_length( $length ) {
+	return 18;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function new_excerpt_more( $more ) {
+	return '&#8230;';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
