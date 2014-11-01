@@ -772,17 +772,32 @@ body.search-active .search-bar {
   #mobile-menu .menu-social {
     padding-left: 0;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
     border-bottom: 1px solid #ccc; }
     #mobile-menu .menu-social li {
       list-style: none;
       display: inline-block;
-      padding: 1em; }
+      padding: 1.25rem; }
+    #mobile-menu .menu-social a:link, #mobile-menu .menu-social a:visited {
+      font-size: 1.5625rem;
+      color: white; }
   #mobile-menu .menu-pages {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
     #mobile-menu .menu-pages li {
       list-style: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
       padding: 1em; }
+    #mobile-menu .menu-pages a:link, #mobile-menu .menu-pages a:visited {
+      font-size: 1.875rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      display: block; }
 
 @media (max-width: 767px) {
   .menu-btn {

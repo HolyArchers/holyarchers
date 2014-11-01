@@ -500,24 +500,43 @@ body.search-active {
       padding-top: .5em;
     }
   }
+
   .menu-social {
     padding-left: 0;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
     border-bottom: 1px solid #ccc;
     li {
       list-style: none;
       display: inline-block;
-      padding: 1em;
+      padding: rem(20);
+    }
+
+    a:link, a:visited {
+      font-size: rem(25);
+      color: white;
+
     }
   }
 
   .menu-pages {
     padding-left: 0;
-
+    margin-top: 0;
+    margin-bottom: 0;
     li {
       list-style: none;
       border-bottom: 1px solid rgba(255,255,255,0.3);
       padding: 1em;
+    }
+    a:link, a:visited {
+      font-size: rem(30);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      padding-top: rem(16);
+      padding-bottom: rem(16);
+      display: block;
     }
   }
 }
