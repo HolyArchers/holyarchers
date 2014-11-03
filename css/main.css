@@ -700,7 +700,8 @@ a:hover, a:active {
 .post {
   border-bottom: 1px solid #E0E0E0;
   padding-top: 1.25rem;
-  padding-bottom: 2.6179375rem; }
+  padding-bottom: 2.6179375rem;
+  width: 100%; }
 
 .box-main {
   padding-left: 6.8535625rem;
