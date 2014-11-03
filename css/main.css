@@ -404,6 +404,8 @@ body {
   background: #ccc url("../img/noise.png");
   background-size: 60px 60px; }
 
+article img, .site-content img {
+  max-width: 100%; }
 article h1, .site-content h1 {
   font-family: 'abril-titling', serif;
   font-size: 2.6179375rem;
@@ -733,6 +735,8 @@ blockquote {
   padding: 0.75rem 1.25rem; }
 
 .content-area ol, .content-area ul {
+  font-size: 2.0225rem;
+  font-weight: 100;
   border-top: 1px solid #c5bfbf;
   border-bottom: 1px solid #c5bfbf;
   padding: 0; }
@@ -857,3 +861,15 @@ body.search-active .search-bar {
 @media (max-width: 767px) {
   .menu-btn {
     margin: 1.7rem !important; } }
+
+table {
+  font-size: 1.25rem;
+  width: 100%; }
+  table thead {
+    border-bottom: 3px solid #463F3F;
+    text-align: left; }
+  table tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.05); }
+  table tbody td {
+    padding-left: 0.5em;
+    padding-right: 0.5em; }
