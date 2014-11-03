@@ -10,7 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <script src="//use.typekit.net/wsx3fln.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
