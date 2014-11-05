@@ -416,7 +416,8 @@ article p, .site-content p {
   font-size: 1.618rem;
   line-height: 2.6179375rem;
   margin-top: 0rem;
-  margin-bottom: 2.0225rem; }
+  margin-bottom: 2.0225rem;
+  font-weight: 300; }
 article p + p, .site-content p + p {
   /* margin-top: rem(-6); */ }
 
@@ -484,7 +485,6 @@ a:hover, a:active {
     padding-bottom: 4em; }
 
 .entry-content {
-  font-weight: 300;
   line-height: 1.4; }
 
 .wrapper-header {
