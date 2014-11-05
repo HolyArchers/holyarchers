@@ -50,14 +50,14 @@
 	<ul class="menu-social"></ul>
 	<ul class="menu-pages"></ul>
 </div>
-<div class="wrapper wrapper-header">
+<div class="wrapper wrapper-header" role="banner">
 	<div class="container container-header">
 		<div class="row middle-xs">
 			<div class="col-xs-12 cf">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<h1 class="site-title pull-left">
 						<a href="<?php bloginfo('url');?>">
-							<img src="<?php echo get_template_directory_uri() . "/img/ha-badge.svg"; ?>" onerror="this.onerror=null; this.src='image.png'" /><?php bloginfo( 'name' ); ?>
+							<img alt="Holy Archers Crest" src="<?php echo get_template_directory_uri() . "/img/ha-badge.svg"; ?>" onerror="this.onerror=null; this.src='image.png'" /><?php bloginfo( 'name' ); ?>
 						</a>
 					</h1>
 
@@ -110,6 +110,6 @@
 </div>
 
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content container" role="main">
 		<div class="row">
 			<div class="col-xs-12">
