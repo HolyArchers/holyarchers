@@ -1,6 +1,12 @@
 body {
   background: #bada55; }
 
+/*
+   Base
+*/
+h4 {
+  margin-bottom: 0.3rem; }
+
 /* No files to import found in _config/_utilities/* */
 /* No files to import found in _elements/**\/* */
 /* No files to import found in _blocks/**\/* */
