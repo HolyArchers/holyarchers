@@ -757,9 +757,11 @@ blockquote {
     border-bottom: 1px solid #e9e7e7;
     padding: 0.75rem 1.25rem;
     list-style: none; }
-  .content-area ol ul, .content-area ul ul {
-    font-size: 1rem; }
-    .content-area ol ul li, .content-area ul ul li {
+  .content-area ol ul, .content-area ol ol, .content-area ul ul, .content-area ul ol {
+    font-size: 1rem;
+    border-top: 0;
+    border-bottom: 0; }
+    .content-area ol ul li, .content-area ol ol li, .content-area ul ul li, .content-area ul ol li {
       border-bottom: 0;
       list-style: circle;
       margin-left: 2em; }

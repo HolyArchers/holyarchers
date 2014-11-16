@@ -475,8 +475,10 @@ blockquote {
       list-style: none;
     }
 
-    ul {
+    ul, ol {
       font-size: rem(16);
+      border-top: 0;
+      border-bottom: 0;
       li {
         border-bottom: 0;
         list-style: circle;
