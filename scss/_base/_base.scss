@@ -88,30 +88,48 @@ tbody {
       padding-bottom: 4em;
     }
 
+    h1 {
+        @include serif-heading;
+        font-size: rem(41.887);
+        margin-top: rem(25.888);
+        margin-bottom: rem(12);
+        line-height: rem(41.887);
+    }
+
     h2 {
+        font-size: 2.618rem;
+        line-height: 2.618rem;
+        margin-top: 2.618rem;
         margin-bottom: 0.7rem;
+
     }
 
     h3 {
+        font-size: 1.618rem;
+        line-height: 2.023rem;
         margin-bottom: 0.3rem;
+        margin-top: 3.272rem;
+    }
+
+    h2 + h3 {
+        margin-top: 2.023;
     }
 
     h4 {
         margin-bottom: 0.3rem;
     }
-    h1 {
-      @include serif-heading;
-      font-size: rem(41.887);
-      margin-top: rem(25.888);
-      margin-bottom: rem(12);
-      line-height: rem(41.887);
-    }
+
     p {
       font-size: rem(25.888);
       line-height: rem(41.887);
       margin-top: rem(0);
-      margin-bottom: rem(32.360);
+      margin-bottom: rem(25.888);
       font-weight: 300;
+    }
+
+    pre {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     ol, ul {
         font-size: rem(32.360);

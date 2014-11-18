@@ -511,24 +511,35 @@ tbody td {
   /* Rectangle 8: */ }
   .typography .box {
     padding-bottom: 4em; }
-  .typography h2 {
-    margin-bottom: 0.7rem; }
-  .typography h3 {
-    margin-bottom: 0.3rem; }
-  .typography h4 {
-    margin-bottom: 0.3rem; }
   .typography h1 {
     font-family: 'abril-titling', serif;
     font-size: 2.6179375rem;
     margin-top: 1.618rem;
     margin-bottom: 0.75rem;
     line-height: 2.6179375rem; }
+  .typography h2 {
+    font-size: 2.618rem;
+    line-height: 2.618rem;
+    margin-top: 2.618rem;
+    margin-bottom: 0.7rem; }
+  .typography h3 {
+    font-size: 1.618rem;
+    line-height: 2.023rem;
+    margin-bottom: 0.3rem;
+    margin-top: 3.272rem; }
+  .typography h2 + h3 {
+    margin-top: 2.023; }
+  .typography h4 {
+    margin-bottom: 0.3rem; }
   .typography p {
     font-size: 1.618rem;
     line-height: 2.6179375rem;
     margin-top: 0rem;
-    margin-bottom: 2.0225rem;
+    margin-bottom: 1.618rem;
     font-weight: 300; }
+  .typography pre {
+    margin-top: 0;
+    margin-bottom: 0; }
   .typography ol, .typography ul {
     font-size: 2.0225rem;
     font-weight: 100;
