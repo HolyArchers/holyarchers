@@ -473,15 +473,8 @@ html {
     html {
       font-size: 0.7em; } }
 
-h2 {
-  margin-bottom: 0.7rem; }
-
-h3 {
-  margin-bottom: 0.3rem; }
-
-h4 {
-  margin-bottom: 0.3rem; }
-
+/* Opt-In Typography
+ ========================================================================== */
 table {
   font-size: 1.25rem;
   width: 100%; }
@@ -496,18 +489,31 @@ tbody td {
   padding-left: 0.5em;
   padding-right: 0.5em; }
 
-.site-content h1 {
-  font-family: 'abril-titling', serif;
-  font-size: 2.6179375rem;
-  margin-top: 1.618rem;
-  margin-bottom: 0.75rem;
-  line-height: 2.6179375rem; }
-.site-content p {
-  font-size: 1.618rem;
-  line-height: 2.6179375rem;
-  margin-top: 0rem;
-  margin-bottom: 2.0225rem;
-  font-weight: 300; }
+.typography {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /* Rectangle 8: */ }
+  .typography .box {
+    padding-bottom: 4em; }
+  .typography h2 {
+    margin-bottom: 0.7rem; }
+  .typography h3 {
+    margin-bottom: 0.3rem; }
+  .typography h4 {
+    margin-bottom: 0.3rem; }
+  .typography h1 {
+    font-family: 'abril-titling', serif;
+    font-size: 2.6179375rem;
+    margin-top: 1.618rem;
+    margin-bottom: 0.75rem;
+    line-height: 2.6179375rem; }
+  .typography p {
+    font-size: 1.618rem;
+    line-height: 2.6179375rem;
+    margin-top: 0rem;
+    margin-bottom: 2.0225rem;
+    font-weight: 300; }
 
 .box {
   background: #FFFFFF;
@@ -527,14 +533,6 @@ tbody td {
   .main-navigation ul li {
     display: inline-block;
     float: left; }
-
-.site-content {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  /* Rectangle 8: */ }
-  .site-content .box {
-    padding-bottom: 4em; }
 
 .wrapper-header {
   background: #463F3F;

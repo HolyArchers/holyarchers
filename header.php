@@ -110,6 +110,6 @@
 </div>
 
 
-	<div id="content" class="site-content container" role="main">
+	<div id="content" class="typography container" role="main">
 		<div class="row">
 			<div class="col-xs-12">

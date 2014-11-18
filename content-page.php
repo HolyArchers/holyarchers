@@ -6,7 +6,7 @@
  */
 ?>
 <div class="box box-main">
-	<article class="site-content">
+	<article class="typography">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
