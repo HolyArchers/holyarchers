@@ -371,12 +371,6 @@ th {
 
 /* Config: Utilities
  ========================================================================== */
-.pull-left {
-  float: left; }
-
-.pull-right {
-  float: right; }
-
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -399,6 +393,12 @@ th {
     /* 2 */ }
   .cf:after {
     clear: both; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
 
 /* ==========================================================================
  Mixins
