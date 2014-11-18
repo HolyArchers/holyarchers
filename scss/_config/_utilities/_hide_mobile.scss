@@ -1,0 +1,5 @@
+.hide-mobile {
+  @include narrow {
+    display: none !important;
+  }
+}

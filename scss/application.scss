@@ -22,6 +22,8 @@
 @import "_config/_utilities/_rem";
 @import "_config/_utilities/_size";
 @import "_config/_utilities/_font-size-rem";
+@import "_config/_utilities/_hide_mobile";
+@import "_config/_utilities/_only_mobile";
 
 /* ==========================================================================
  Mixins
@@ -61,3 +63,4 @@
 @import "_blocks/_entry/_entry";
 @import "_blocks/_navigation/_navigation";
 @import "_blocks/_searchbar/_searchbar";
+@import "_blocks/_mobilemenu/_mobilemenu";
