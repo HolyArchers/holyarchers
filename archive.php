@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div class="box box-main">
-	<article>
+	<article class="site-content">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

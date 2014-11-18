@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="site-content">
 	<header class="entry-header">
 		<div class="entry-date">
 			<?php echo get_the_date(); ?>
