@@ -1,0 +1,18 @@
+/**
+ * _grid.scss
+ *
+ * This exists to set some boundries for flexboxgrid
+ *
+ */
+
+.row {
+  min-width: 960px;
+}
+.row .row {
+  min-width: inherit;
+}
+@media only screen and (max-width : 960px) {
+  .row {
+    min-width: inherit;
+  }
+}

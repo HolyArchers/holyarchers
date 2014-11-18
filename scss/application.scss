@@ -4,7 +4,6 @@
  * @author Ryan LaBouve
  *
  * TODO: Refactor base.scss into element and modules
- * TODO: Refacotr base into it's own folder structure
  */
 
 /* ==========================================================================
@@ -32,6 +31,13 @@
 @import "_mixins/_sans-serif.scss";
 @import "_mixins/_serif-heading.scss";
 @import "_mixins/_serif.scss";
+
+
+/* ==========================================================================
+ Grid
+ ========================================================================== */
+
+@import "_grid";
 
 
 /* ==========================================================================

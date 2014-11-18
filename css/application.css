@@ -4,7 +4,6 @@
  * @author Ryan LaBouve
  *
  * TODO: Refactor base.scss into element and modules
- * TODO: Refacotr base into it's own folder structure
  */
 /* ==========================================================================
  Config
@@ -401,31 +400,32 @@ th {
  Mixins
  ========================================================================== */
 /* ==========================================================================
+ Grid
+ ========================================================================== */
+/**
+ * _grid.scss
+ *
+ * This exists to set some boundries for flexboxgrid
+ *
+ */
+.row {
+  min-width: 960px; }
+
+.row .row {
+  min-width: inherit; }
+
+@media only screen and (max-width: 960px) {
+  .row {
+    min-width: inherit; } }
+/* ==========================================================================
  Base
  ========================================================================== */
-/*
-   Base
-*/
-h2 {
-  margin-bottom: 0.7rem; }
-
-h3 {
-  margin-bottom: 0.3rem; }
-
-h4 {
-  margin-bottom: 0.3rem; }
-
-/* Base Responive Type*/
-html {
-  font-size: 100%; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    html {
-      font-size: 0.8em; } }
-  @media (max-width: 767px) {
-    html {
-      font-size: 0.7em; } }
-
-/* Defaults */
+/**
+ * _base.scss
+ */
+/* ==========================================================================
+General Defaults
+========================================================================== */
 body {
   font-family: 'proxima-nova', sans-serif;
   display: -webkit-flex;
@@ -439,22 +439,77 @@ body {
   background: #ccc url("../img/noise.png");
   background-size: 60px 60px; }
 
-article img, .site-content img {
+img {
   max-width: 100%; }
-article h1, .site-content h1 {
+
+a:link,
+a:visited {
+  color: #81bcd3; }
+
+a:hover,
+a:active {
+  color: #5ba8c6; }
+
+blockquote {
+  font-family: 'abril-text', serif;
+  color: #aaa;
+  font-style: italic;
+  box-shadow: -3px 0 0 #81bcd3;
+  margin: 0;
+  padding: 0.75rem 1.25rem; }
+
+body.search-active .search-bar {
+  height: 60px; }
+
+/* ==========================================================================
+ Typography
+ ========================================================================== */
+html {
+  font-size: 100%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    html {
+      font-size: 0.8em; } }
+  @media (max-width: 767px) {
+    html {
+      font-size: 0.7em; } }
+
+h2 {
+  margin-bottom: 0.7rem; }
+
+h3 {
+  margin-bottom: 0.3rem; }
+
+h4 {
+  margin-bottom: 0.3rem; }
+
+table {
+  font-size: 1.25rem;
+  width: 100%; }
+
+thead {
+  border-bottom: 3px solid #463F3F;
+  text-align: left; }
+
+tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.05); }
+tbody td {
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+
+article h1,
+.site-content h1 {
   font-family: 'abril-titling', serif;
   font-size: 2.6179375rem;
   margin-top: 1.618rem;
   margin-bottom: 0.75rem;
   line-height: 2.6179375rem; }
-article p, .site-content p {
+article p,
+.site-content p {
   font-size: 1.618rem;
   line-height: 2.6179375rem;
   margin-top: 0rem;
   margin-bottom: 2.0225rem;
   font-weight: 300; }
-article p + p, .site-content p + p {
-  /* margin-top: rem(-6); */ }
 
 .entry-header {
   text-decoration: none; }
@@ -481,12 +536,6 @@ article p + p, .site-content p + p {
 .entry-summary {
   line-height: 1.5;
   color: #C8C8C8; }
-
-a:link, a:visited {
-  color: #81bcd3; }
-
-a:hover, a:active {
-  color: #5ba8c6; }
 
 .entry-content {
   font-size: 1.25rem; }
@@ -604,15 +653,6 @@ a:hover, a:active {
     .container {
       margin: inherit; } }
 
-.row {
-  min-width: 960px; }
-
-.row .row {
-  min-width: inherit; }
-
-@media only screen and (max-width: 960px) {
-  .row {
-    min-width: inherit; } }
 .container-widgets {
   margin-top: 1em;
   margin-bottom: 2em; }
@@ -765,14 +805,6 @@ a:hover, a:active {
 .nav-links .nav-next {
   float: right; }
 
-blockquote {
-  font-family: 'abril-text', serif;
-  color: #aaa;
-  font-style: italic;
-  box-shadow: -3px 0 0 #81bcd3;
-  margin: 0;
-  padding: 0.75rem 1.25rem; }
-
 .content-area ol, .content-area ul {
   font-size: 2.0225rem;
   font-weight: 100;
@@ -826,9 +858,6 @@ blockquote {
     height: 30px;
     overflow: hidden;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.1); }
-
-body.search-active .search-bar {
-  height: 60px; }
 
 .box-highlight {
   background: #c7b572;
@@ -908,18 +937,6 @@ body.search-active .search-bar {
 @media (max-width: 767px) {
   .menu-btn {
     margin: 1.7rem !important; } }
-
-table {
-  font-size: 1.25rem;
-  width: 100%; }
-  table thead {
-    border-bottom: 3px solid #463F3F;
-    text-align: left; }
-  table tbody tr:nth-child(even) {
-    background: rgba(0, 0, 0, 0.05); }
-  table tbody td {
-    padding-left: 0.5em;
-    padding-right: 0.5em; }
 
 /* ==========================================================================
  Elements
