@@ -1,0 +1,18 @@
+.search-bar {
+  background: darken($ha-black, 10);
+  -webkit-transition: all 0.1s ease-in;
+  height: 0;
+  input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 30px;
+    overflow:hidden;
+    text-shadow: 0 0 5px rgba(255,255,255,0.1);
+  }
+}

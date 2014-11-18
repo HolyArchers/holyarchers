@@ -54,7 +54,7 @@
 	<div class="container container-header">
 		<div class="row middle-xs">
 			<div class="col-xs-12 cf">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="navigation__main" role="navigation">
 					<h1 class="site-title pull-left">
 						<a href="<?php bloginfo('url');?>">
 							<img alt="Holy Archers Crest" src="<?php echo get_template_directory_uri() . "/img/ha-badge.svg"; ?>" onerror="this.onerror=null; this.src='image.png'" /><?php bloginfo( 'name' ); ?>
