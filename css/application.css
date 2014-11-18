@@ -289,7 +289,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -312,7 +313,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -371,6 +371,12 @@ th {
 
 /* Config: Utilities
  ========================================================================== */
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -393,12 +399,6 @@ th {
     /* 2 */ }
   .cf:after {
     clear: both; }
-
-.pull-left {
-  float: left; }
-
-.pull-right {
-  float: right; }
 
 /* ==========================================================================
  Mixins
@@ -431,9 +431,13 @@ html {
 /* Defaults */
 body {
   font-family: 'proxima-nova', sans-serif;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #424242;
   background: #ccc url("../img/noise.png");
   background-size: 60px 60px; }
@@ -496,9 +500,10 @@ a:hover, a:active {
  */
 .box {
   background: #FFFFFF;
-  -moz-box-shadow: 0px 2px 10px 0px rgba(150, 150, 150, 0.38), 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px 2px 10px 0px rgba(150, 150, 150, 0.38), 0 -2px 0 rgba(0, 0, 0, 0.3) inset;
   padding: 1rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 230px; }
   .box .row {
@@ -513,7 +518,9 @@ a:hover, a:active {
     float: left; }
 
 .site-content {
-  flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   /* Rectangle 8: */ }
   .site-content .box {
     padding-bottom: 4em; }
@@ -925,3 +932,5 @@ table {
  Blocks
  ========================================================================== */
 /* No files to import found in _blocks/**\/* */
+
+/*# sourceMappingURL=application.css.map */
