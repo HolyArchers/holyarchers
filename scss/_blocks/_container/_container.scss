@@ -1,0 +1,77 @@
+.container {
+  max-width: 960px;
+  margin: auto;
+  word-wrap: break-word;
+  @include narrow {
+    margin: inherit;
+  }
+}
+
+.container-widgets {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.container-widgets {
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+
+.container-about {
+     margin-bottom: 1em;
+/*padding-top: 3em;
+padding-bottom: 3em; */
+    h1 {
+      @include serif;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 2rem;
+    }
+    h2 {
+      @include serif;
+      color: $ha-red;
+      font-size: 1em;
+      line-height: 1;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p {
+      color: #aaa;
+      line-height: 1.4;
+      font-weight: 300;
+      font-size: 0.9em;
+      margin-top: 0.5em;
+      margin-bottom: 0.2em;
+    }
+
+    @include tablet {
+      font-size: rem(25.888);
+      line-height: rem(41.887);
+      margin-top: rem(0);
+      margin-bottom: rem(32.360);
+      padding-bottom: rem(32);
+    }
+
+    @include narrow {
+      font-size: rem(25.888);
+      line-height: rem(41.887);
+      h1 {
+        margin-top: rem(20);
+      }
+      margin-top: rem(20);
+      margin-bottom: rem(32.360);
+      padding-bottom: rem(32);
+      padding-left: rem(20);
+      padding-right: rem(20);
+      text-align: center;
+      .profile-pic {
+        margin: auto;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

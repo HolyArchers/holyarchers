@@ -3,7 +3,12 @@
  *
  * @author Ryan LaBouve
  *
- * TODO: Refactor base.scss into element and modules
+ * TODO: Refactor scss/_blocks/_container
+ * TODO: Refactor scss/_blocks/_wrapper
+ * TODO: Refactor scss/_elements/_profilepic_
+ * TODO: Refactor scss/_blocks/_mobilemenu
+ * TODO: Refactor scss/_blocks/_navigation
+ *
  */
 
 /* ==========================================================================
@@ -53,7 +58,7 @@
  Elements
  ========================================================================== */
 
-@import "_elements/**/*";
+@import "_elements/_profilepic/_profilepic";
 
 
 /* ==========================================================================
@@ -64,3 +69,5 @@
 @import "_blocks/_navigation/_navigation";
 @import "_blocks/_searchbar/_searchbar";
 @import "_blocks/_mobilemenu/_mobilemenu";
+@import "_blocks/_wrapper/_wrapper";
+@import "_blocks/_container/_container";

@@ -3,7 +3,12 @@
  *
  * @author Ryan LaBouve
  *
- * TODO: Refactor base.scss into element and modules
+ * TODO: Refactor scss/_blocks/_container
+ * TODO: Refactor scss/_blocks/_wrapper
+ * TODO: Refactor scss/_elements/_profilepic_
+ * TODO: Refactor scss/_blocks/_mobilemenu
+ * TODO: Refactor scss/_blocks/_navigation
+ *
  */
 /* ==========================================================================
  Config
@@ -524,6 +529,42 @@ tbody td {
     margin-top: 0rem;
     margin-bottom: 2.0225rem;
     font-weight: 300; }
+  .typography ol, .typography ul {
+    font-size: 2.0225rem;
+    font-weight: 100;
+    border-top: 1px solid #c5bfbf;
+    border-bottom: 1px solid #c5bfbf;
+    padding: 0; }
+    .typography ol li, .typography ul li {
+      border-bottom: 1px solid #e9e7e7;
+      padding: 0.75rem 1.25rem;
+      list-style: none; }
+    .typography ol ul, .typography ol ol, .typography ul ul, .typography ul ol {
+      font-size: 1rem;
+      border-top: 0;
+      border-bottom: 0; }
+      .typography ol ul li, .typography ol ol li, .typography ul ul li, .typography ul ol li {
+        border-bottom: 0;
+        list-style: circle;
+        margin-left: 2em; }
+  .typography ol {
+    counter-reset: ordered-list; }
+  .typography ol li:before {
+    font-family: 'abril-text', serif;
+    /* font-style: italic; */
+    font-weight: 300;
+    content: counter(ordered-list);
+    counter-increment: ordered-list;
+    display: block;
+    margin-left: -2.0225rem;
+    padding: 0 2.0225rem;
+    float: left;
+    color: #81bcd3;
+    font-weight: 700;
+    font-size: 2.0225rem;
+    line-height: 2.0225rem; }
+  .typography ol li:last-child {
+    border: none; }
 
 .box {
   background: #FFFFFF;
@@ -537,14 +578,6 @@ tbody td {
     min-height: 230px; }
     .box .row .col-xs-8 {
       margin-top: 1.2em; }
-
-.wrapper-header {
-  background: #463F3F;
-  color: white;
-  min-height: 37px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
 
 .site-title, h1.site-title {
   font-size: 1.9em;
@@ -569,17 +602,6 @@ tbody td {
       .site-title img, h1.site-title img {
         height: 14px; } }
 
-.wrapper-footer {
-  font-family: 'abril-text', serif;
-  background: #463F3F;
-  font-size: 0.8em;
-  font-style: italic;
-  font-weight: 100;
-  color: white;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  color: rgba(255, 255, 255, 0.8); }
-
 .pages-nav {
   font-family: 'abril-text', serif;
   font-style: italic;
@@ -587,96 +609,9 @@ tbody td {
   .pages-nav a:link, .pages-nav a:visited {
     color: rgba(255, 255, 255, 0.6); }
 
-.container {
-  max-width: 960px;
-  margin: auto;
-  word-wrap: break-word; }
-  @media (max-width: 767px) {
-    .container {
-      margin: inherit; } }
-
-.container-widgets {
-  margin-top: 1em;
-  margin-bottom: 2em; }
-
 .footer-ha-badge {
   height: 22px;
   display: block; }
-
-.profile-pic {
-  margin: auto;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%; }
-
-.profile-ryan {
-  background: url("../img/profile-ryan.jpg");
-  background-size: auto 100%; }
-
-.profile-pic-large {
-  width: 17.942125rem;
-  height: 17.942125rem; }
-
-.profile-pic.pull-right {
-  margin-left: 1.25rem; }
-
-.container-widgets {
-  position: relative; }
-  .container-widgets img {
-    max-width: 100%; }
-  .container-widgets .container-about {
-    margin-bottom: 1em;
-    /*padding-top: 3em;
-    padding-bottom: 3em; */ }
-    .container-widgets .container-about h1 {
-      font-family: 'abril-text', serif;
-      text-transform: uppercase;
-      line-height: 1;
-      margin-bottom: 0;
-      margin-top: 2rem; }
-    .container-widgets .container-about h2 {
-      font-family: 'abril-text', serif;
-      color: #a41d21;
-      font-size: 1em;
-      line-height: 1;
-      margin-top: 0;
-      margin-bottom: 0; }
-    .container-widgets .container-about p {
-      color: #aaa;
-      line-height: 1.4;
-      font-weight: 300;
-      font-size: 0.9em;
-      margin-top: 0.5em;
-      margin-bottom: 0.2em; }
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .container-widgets .container-about {
-        font-size: 1.618rem;
-        line-height: 2.6179375rem;
-        margin-top: 0rem;
-        margin-bottom: 2.0225rem;
-        padding-bottom: 2rem; }
-        .container-widgets .container-about .profile-pic {
-          margin: auto;
-          width: 180px;
-          height: 180px;
-          border-radius: 50%; } }
-    @media (max-width: 767px) {
-      .container-widgets .container-about {
-        font-size: 1.618rem;
-        line-height: 2.6179375rem;
-        margin-top: 1.25rem;
-        margin-bottom: 2.0225rem;
-        padding-bottom: 2rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        text-align: center; }
-        .container-widgets .container-about h1 {
-          margin-top: 1.25rem; }
-        .container-widgets .container-about .profile-pic {
-          margin: auto;
-          width: 180px;
-          height: 180px;
-          border-radius: 50%; } }
 
 .display-posts-listing {
   border-top: 1px solid #eee; }
@@ -731,43 +666,6 @@ tbody td {
       padding-left: 2em;
       padding-right: 2em; } }
 
-.content-area ol, .content-area ul {
-  font-size: 2.0225rem;
-  font-weight: 100;
-  border-top: 1px solid #c5bfbf;
-  border-bottom: 1px solid #c5bfbf;
-  padding: 0; }
-  .content-area ol li, .content-area ul li {
-    border-bottom: 1px solid #e9e7e7;
-    padding: 0.75rem 1.25rem;
-    list-style: none; }
-  .content-area ol ul, .content-area ol ol, .content-area ul ul, .content-area ul ol {
-    font-size: 1rem;
-    border-top: 0;
-    border-bottom: 0; }
-    .content-area ol ul li, .content-area ol ol li, .content-area ul ul li, .content-area ul ol li {
-      border-bottom: 0;
-      list-style: circle;
-      margin-left: 2em; }
-.content-area ol {
-  counter-reset: ordered-list; }
-.content-area ol li:before {
-  font-family: 'abril-text', serif;
-  /* font-style: italic; */
-  font-weight: 300;
-  content: counter(ordered-list);
-  counter-increment: ordered-list;
-  display: block;
-  margin-left: -2.0225rem;
-  padding: 0 2.0225rem;
-  float: left;
-  color: #81bcd3;
-  font-weight: 700;
-  font-size: 2.0225rem;
-  line-height: 2.0225rem; }
-.content-area ol li:last-child {
-  border: none; }
-
 .box-highlight {
   background: #c7b572;
   text-align: center; }
@@ -781,7 +679,23 @@ tbody td {
 /* ==========================================================================
  Elements
  ========================================================================== */
-/* No files to import found in _elements/**\/* */
+.profile-pic {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; }
+
+.profile-ryan {
+  background: url("../img/profile-ryan.jpg");
+  background-size: auto 100%; }
+
+.profile-pic-large {
+  width: 17.942125rem;
+  height: 17.942125rem; }
+
+.profile-pic.pull-right {
+  margin-left: 1.25rem; }
+
 /* ==========================================================================
  Blocks
  ========================================================================== */
@@ -931,5 +845,89 @@ tbody td {
 @media (max-width: 767px) {
   .menu-btn {
     margin: 1.7rem !important; } }
+
+.wrapper-header {
+  background: #463F3F;
+  color: white;
+  min-height: 37px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+
+.wrapper-footer {
+  font-family: 'abril-text', serif;
+  background: #463F3F;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 100;
+  color: white;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  color: rgba(255, 255, 255, 0.8); }
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  word-wrap: break-word; }
+  @media (max-width: 767px) {
+    .container {
+      margin: inherit; } }
+
+.container-widgets {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+
+.container-widgets {
+  position: relative; }
+  .container-widgets img {
+    max-width: 100%; }
+  .container-widgets .container-about {
+    margin-bottom: 1em;
+    /*padding-top: 3em;
+    padding-bottom: 3em; */ }
+    .container-widgets .container-about h1 {
+      font-family: 'abril-text', serif;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 2rem; }
+    .container-widgets .container-about h2 {
+      font-family: 'abril-text', serif;
+      color: #a41d21;
+      font-size: 1em;
+      line-height: 1;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .container-widgets .container-about p {
+      color: #aaa;
+      line-height: 1.4;
+      font-weight: 300;
+      font-size: 0.9em;
+      margin-top: 0.5em;
+      margin-bottom: 0.2em; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .container-widgets .container-about {
+        font-size: 1.618rem;
+        line-height: 2.6179375rem;
+        margin-top: 0rem;
+        margin-bottom: 2.0225rem;
+        padding-bottom: 2rem; } }
+    @media (max-width: 767px) {
+      .container-widgets .container-about {
+        font-size: 1.618rem;
+        line-height: 2.6179375rem;
+        margin-top: 1.25rem;
+        margin-bottom: 2.0225rem;
+        padding-bottom: 2rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        text-align: center; }
+        .container-widgets .container-about h1 {
+          margin-top: 1.25rem; }
+        .container-widgets .container-about .profile-pic {
+          margin: auto;
+          width: 180px;
+          height: 180px;
+          border-radius: 50%; } }
 
 /*# sourceMappingURL=application.css.map */
