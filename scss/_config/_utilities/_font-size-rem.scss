@@ -1,0 +1,4 @@
+@mixin font-size-rem($target) {
+  font-size: $target * 1px;
+  font-size: rem($target);
+}

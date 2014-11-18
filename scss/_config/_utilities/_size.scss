@@ -1,0 +1,4 @@
+@mixin size($prop: "font-size", $target: $base-font-size) {
+  #{$prop}: $target;
+  #{$prop}: rem($target);
+}

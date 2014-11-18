@@ -3,7 +3,6 @@
  *
  * @author Ryan LaBouve
  *
- * TODO: Refactor Mixins out of my utilities
  * TODO: Break Utilities out into different files
  * TODO: Break Mixins into different files
  * TODO: Refactor base.scss into element and modules
@@ -19,11 +18,13 @@
 
 /* Config: Utilities
  ========================================================================== */
-@import "_config/_utilities/_utilities";
 @import "_config/_utilities/_mediaqueries";
 @import "_config/_utilities/_clearfix";
 @import "_config/_utilities/_pull_x";
-
+@import "_config/_utilities/_em";
+@import "_config/_utilities/_rem";
+@import "_config/_utilities/_size";
+@import "_config/_utilities/_font-size-rem";
 
 /* ==========================================================================
  Mixins
