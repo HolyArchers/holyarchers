@@ -509,35 +509,6 @@ tbody td {
   margin-bottom: 2.0225rem;
   font-weight: 300; }
 
-.entry-header {
-  text-decoration: none; }
-
-.entry-date {
-  font-family: 'proxima-nova', sans-serif;
-  font-size: 0.875rem;
-  margin-top: 0.29825rem;
-  margin-bottom: 0.29825rem;
-  line-height: 1em;
-  color: #B51414;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
-
-.entry-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #463F3F; }
-  .entry-title a:link, .entry-title a:visited {
-    text-decoration: none;
-    color: #463F3F; }
-
-.entry-summary {
-  line-height: 1.5;
-  color: #C8C8C8; }
-
-.entry-content {
-  font-size: 1.25rem; }
-
 .box {
   background: #FFFFFF;
   box-shadow: 0px 2px 10px 0px rgba(150, 150, 150, 0.38), 0 -2px 0 rgba(0, 0, 0, 0.3) inset;
@@ -564,9 +535,6 @@ tbody td {
   /* Rectangle 8: */ }
   .site-content .box {
     padding-bottom: 4em; }
-
-.entry-content {
-  line-height: 1.4; }
 
 .wrapper-header {
   background: #463F3F;
@@ -939,6 +907,34 @@ tbody td {
 /* ==========================================================================
  Blocks
  ========================================================================== */
-/* No files to import found in _blocks/**\/* */
+.entry__content {
+  font-size: 1.25rem;
+  line-height: 1.4; }
+
+.entry__date {
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 0.875rem;
+  margin-top: 0.29825rem;
+  margin-bottom: 0.29825rem;
+  line-height: 1em;
+  color: #B51414;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+.entry__header {
+  text-decoration: none; }
+
+.entry__summary {
+  line-height: 1.5;
+  color: #C8C8C8; }
+
+.entry__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #463F3F; }
+  .entry__title a:link, .entry__title a:visited {
+    text-decoration: none;
+    color: #463F3F; }
 
 /*# sourceMappingURL=application.css.map */

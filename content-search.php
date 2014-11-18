@@ -9,21 +9,21 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="site-content">
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+	<header class="entry__header">
+		<?php the_title( sprintf( '<h1 class="entry__title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php holyarchers_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header><!-- .entry__header -->
 
-	<div class="entry-summary">
+	<div class="entry__summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div><!-- .entry__summary -->
 
-	<footer class="entry-footer">
+	<footer class="entry__footer">
 		<?php holyarchers_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer><!-- .entry__footer -->
 </article><!-- #post-## -->

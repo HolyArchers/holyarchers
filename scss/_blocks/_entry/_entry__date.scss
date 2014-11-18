@@ -1,0 +1,12 @@
+.entry__date {
+  @include sans-serif;
+  font-size: rem(14);
+  margin-top: rem(4.772);
+  margin-bottom: rem(4.772);
+  line-height: 1em;
+
+  color: #B51414;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
