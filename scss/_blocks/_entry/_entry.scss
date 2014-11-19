@@ -3,3 +3,9 @@
 @import "_entry__header";
 @import "_entry__summary";
 @import "_entry__title";
+
+.entry {
+    padding-top: 1.25rem;
+    padding-bottom: 2.023rem;
+    border-bottom: 1px solid lighten($ha-black, 65);
+}

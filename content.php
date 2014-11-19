@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="typography">
+<article id="post-<?php the_ID(); ?>" class="entry typography">
 	<header class="entry__header">
 		<div class="entry__date">
 			<?php echo get_the_date(); ?>
