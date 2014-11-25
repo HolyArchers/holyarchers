@@ -1,6 +1,9 @@
 /*global $, console*/
 !(function($) {
   $(function() {
+
+    $("#main, #content").addClass("animated fadeInUp");
+
     // $("body").addClass("search-active");
     $(".search-btn").on("click", function() {
         $("body").toggleClass("search-active");
