@@ -15,11 +15,17 @@ get_header(); ?>
 <div class="box box-main">
 	<div class="wrapper wrapper-content">
 		<div class="container container-content">
-
-			<?php if ( have_posts() ) : ?>
+			<?php
+				$args = array(
+					'order'    => 'desc',
+					'orderby' => 'date'
+				);
+			?>
+			<?php $the_query = new WP_Query( $args ); ?>
+			<?php if ( $the_query->have_posts() ) : ?>
 
 				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<?php if (!empty($post->post_password)) { continue; } ?>
 					<?php
 						/* Include the Post-Format-specific template for the content.
