@@ -537,9 +537,16 @@ tbody td {
     margin-top: 0rem;
     margin-bottom: 1.618rem;
     font-weight: 300; }
+  .typography code {
+    padding: 0.1em 0.5em;
+    font-size: 0.85em;
+    background: rgba(0, 0, 0, 0.08);
+    font-family: Consolas, monaco, monospace; }
   .typography pre {
     margin-top: 0;
     margin-bottom: 0; }
+    .typography pre code {
+      background: transparent; }
   .typography ol, .typography ul {
     font-size: 2.0225rem;
     font-weight: 100;

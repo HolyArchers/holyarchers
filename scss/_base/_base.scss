@@ -127,10 +127,22 @@ tbody {
       font-weight: 300;
     }
 
+    code {
+        padding: 0.1em 0.5em;
+        font-size: 0.85em;
+        background: rgba(0,0,0,0.08);
+        font-family: Consolas, monaco, monospace;
+    }
+
     pre {
         margin-top: 0;
         margin-bottom: 0;
+        code {
+            background: transparent;
+        }
     }
+
+
     ol, ul {
         font-size: rem(32.360);
         font-weight: 100;
