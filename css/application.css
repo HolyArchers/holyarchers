@@ -604,8 +604,7 @@ tbody td {
   .site-title img, h1.site-title img {
     display: inline;
     height: 1.375rem;
-    margin-right: 0.2em;
-    background: white; }
+    margin-right: 0.2em; }
   @media (max-width: 767px) {
     .site-title, h1.site-title {
       margin-left: 0.5em;
