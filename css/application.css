@@ -526,7 +526,7 @@ tbody td {
     font-size: 1.618rem;
     line-height: 2.023rem;
     margin-bottom: 0.3rem;
-    margin-top: 3.272rem; }
+    margin-top: 2.618rem; }
   .typography h2 + h3 {
     margin-top: 2.023; }
   .typography h4 {
@@ -543,8 +543,8 @@ tbody td {
     background: rgba(0, 0, 0, 0.08);
     font-family: Consolas, monaco, monospace; }
   .typography pre {
-    margin-top: 0;
-    margin-bottom: 0; }
+    margin-top: 2em;
+    margin-bottom: 2em; }
     .typography pre code {
       background: transparent; }
   .typography ol, .typography ul {
