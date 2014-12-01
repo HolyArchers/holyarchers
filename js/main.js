@@ -28,5 +28,7 @@
       $("#mobile-menu").removeClass("menu-hide");
     });
 
+    $(".fitvids").fitVids();
+
   });
 })(jQuery);

@@ -100,6 +100,7 @@ function holyarchers_scripts() {
 	wp_enqueue_style( 'holyarchers-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'prism-jst', get_template_directory_uri(). '/vendor/prismjs/prism.js', array('jquery'), false, true);
+	wp_enqueue_script( 'fitvids', get_template_directory_uri(). '/bower_components/fitvids/jquery.fitvids.js', array('jquery'), false, true);
 	wp_enqueue_script( 'ha-script', get_template_directory_uri(). '/js/main.js', array('jquery'), false, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
