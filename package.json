@@ -1,0 +1,27 @@
+{
+  "name": "HolyArchers",
+  "version": "0.0.1",
+  "description": "HolyArcher Wordpress Theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HolyArchers/holyarchers.git"
+  },
+  "keywords": [
+    "wordpress",
+    "gulp",
+    "awesome"
+  ],
+  "author": "Ryan LaBouve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HolyArchers/holyarchers/issues"
+  },
+  "homepage": "https://github.com/HolyArchers/holyarchers",
+  "devDependencies": {
+    "gulp-util": "^3.0.1"
+  }
+}
