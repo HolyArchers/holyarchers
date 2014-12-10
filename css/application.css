@@ -703,6 +703,14 @@ tbody td {
   background: url("../img/profile-ryan.jpg");
   background-size: auto 100%; }
 
+.profile-john {
+  background: url("../img/profile-john.jpg");
+  background-size: auto 100%; }
+
+.profile-john {
+  background: url("../img/profile-jordan.jpg");
+  background-size: auto 100%; }
+
 .profile-pic-large {
   width: 17.942125rem;
   height: 17.942125rem; }
