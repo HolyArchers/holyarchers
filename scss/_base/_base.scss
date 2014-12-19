@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     color: #424242;
     background: #ccc url('../img/noise.png');
-    background-size: 60px 60px;
+    background-size: 61px 61px;
 }
 
 img {
@@ -28,6 +28,22 @@ a:visited {
 a:hover,
 a:active {
     color: darken($ha-blue, 10);
+}
+
+a.btn:link, a.btn:visited  {
+  border: 1px solid rgba(67, 61, 61, 0.1);
+  padding: 0.7em 1.7em;
+  color: #B51414;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+a.btn:hover, a.btn:active  {
+  border: 1px solid transparent;
+  padding: 0.7em 1.7em;
+  background: #B51414;
+  color: white;
 }
 
 blockquote {
