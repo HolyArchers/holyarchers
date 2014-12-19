@@ -71,3 +71,39 @@
 @import "_blocks/_mobilemenu/_mobilemenu";
 @import "_blocks/_wrapper/_wrapper";
 @import "_blocks/_container/_container";
+
+/* ==========================================================================
+ Shame
+ ========================================================================== */
+
+article {
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -200px, 0);
+    -ms-transform: translate3d(0, -200px, 0);
+    transform: translate3d(0, -200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animated {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

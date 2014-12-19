@@ -96,7 +96,7 @@ function holyarchers_scripts() {
 	wp_enqueue_style( 'flexboxgrid', get_template_directory_uri(). '/bower_components/flexboxgrid/css/flexboxgrid.min.css', array(), '3.0.2');
 	wp_enqueue_style( 'prism-css', get_template_directory_uri(). '/vendor/prismjs/prism.css', array(), '3.0.2');
 	wp_enqueue_style( 'holyarchers-main', get_template_directory_uri(). '/css/application.css', array(), '3.0.2');
-	wp_enqueue_style( 'animate-css', get_template_directory_uri(). '/bower_components/animate-css/animate.min.css', array(), '3.0.2');
+	// wp_enqueue_style( 'animate-css', get_template_directory_uri(). '/bower_components/animate-css/animate.min.css', array(), '3.0.2');
 	wp_enqueue_style( 'holyarchers-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'prism-jst', get_template_directory_uri(). '/vendor/prismjs/prism.js', array('jquery'), false, true);
