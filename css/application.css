@@ -781,12 +781,16 @@ tbody td {
     float: left;
     list-style: none;
     display: block;
-    margin: 1em; }
+    margin: 1em 0.3em; }
 .navigation__main a:link, .navigation__main a:visited {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 1.4rem 0.8rem;
+  -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
 .navigation__main a:hover, .navigation__main a:active {
-  color: #e6e6e6; }
+  color: #e6e6e6;
+  background: rgba(255, 255, 255, 0.2); }
 .navigation__main .search {
   margin: 0;
   padding: 1.1rem;

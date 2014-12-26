@@ -9,17 +9,20 @@
             float: left;
             list-style: none;
             display: block;
-            margin: 1em;
+            margin: 1em 0.3em;
         }
     }
 
     a:link, a:visited {
         color: white;
         text-decoration: none;
+        padding: 1.4rem 0.8rem;
+        transition: all 0.2s ease-in
     }
 
     a:hover, a:active {
         color: darken(white, 10);
+        background: rgba(255,255,255,0.2);
     }
 
     .search {
