@@ -800,6 +800,10 @@ tbody td {
     .navigation__main .search {
       padding: 1.7rem; } }
 
+/* SHAME: Undoing error gray box on nav */
+.search a:hover {
+  background: transparent !important; }
+
 .nav-links a:link, .nav-links a:visited {
   display: block;
   color: white;
