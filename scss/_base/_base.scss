@@ -305,6 +305,11 @@ tbody {
     font-size: 0.4rem;
     display: block;
     padding-left: 1em;
+
+    @include narrow {
+      top: 0.2rem !important;
+      font-size: 0.8rem;
+    }
   }
 }
 

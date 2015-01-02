@@ -683,6 +683,10 @@ tbody td {
     font-size: 0.4rem;
     display: block;
     padding-left: 1em; }
+    @media (max-width: 767px) {
+      .display-posts-listing .date {
+        top: 0.2rem !important;
+        font-size: 0.8rem; } }
 
 .widget {
   width: 100%; }
