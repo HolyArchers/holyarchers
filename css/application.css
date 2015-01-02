@@ -652,9 +652,11 @@ tbody td {
     padding-top: 1.1rem; }
     .display-posts-listing .listing-item .date {
       position: absolute;
-      top: 0.3rem; }
+      padding-left: 0;
+      top: 0.3rem;
+      opacity: 0.6; }
   .display-posts-listing a.title:link, .display-posts-listing a.title:visited {
-    color: #aaa;
+    color: #999;
     font-weight: 300;
     font-size: 0.9em;
     text-decoration: none; }
@@ -670,6 +672,8 @@ tbody td {
         line-height: 2.6179375rem;
         margin-top: 0rem;
         margin-bottom: 2.0225rem; } }
+    .display-posts-listing a.title:link:hover, .display-posts-listing a.title:visited:hover {
+      color: #666; }
   .display-posts-listing .date {
     font-family: 'abril-text', serif;
     font-style: italic;

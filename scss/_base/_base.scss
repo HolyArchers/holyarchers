@@ -267,11 +267,14 @@ tbody {
     padding-top: 1.1rem;
     .date {
       position: absolute;
+      padding-left: 0;
       top: 0.3rem;
+      opacity: 0.6;
     }
   }
+
   a.title:link, a.title:visited  {
-    color: #aaa;
+    color: #999;
     font-weight: 300;
     font-size: 0.9em;
     text-decoration: none;
@@ -287,6 +290,10 @@ tbody {
       line-height: rem(41.887);
       margin-top: rem(0);
       margin-bottom: rem(32.360);
+    }
+
+    &:hover {
+      color: #666;
     }
   }
   .date {
