@@ -627,8 +627,9 @@ tbody td {
     margin-right: 0.2em; }
   @media (max-width: 767px) {
     .site-title, h1.site-title {
+      font-size: 1.5em;
       margin-left: 0.5em;
-      line-height: 1.7; }
+      line-height: 2.2; }
       .site-title img, h1.site-title img {
         height: 14px; } }
 
@@ -957,7 +958,7 @@ body.search-active .search-bar {
       margin-top: 0;
       margin-bottom: 0; }
     .container-widgets .container-about p {
-      color: #aaa;
+      color: #999;
       line-height: 1.4;
       font-weight: 300;
       font-size: 0.9em;
