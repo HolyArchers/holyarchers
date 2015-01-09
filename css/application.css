@@ -1055,4 +1055,7 @@ article {
 .language-markup .token.tag, .language-markup .token.attr-name, .language-markup .token.punctuation {
   color: #d1a36b; }
 
+.error {
+  color: red !important; }
+
 /*# sourceMappingURL=application.css.map */

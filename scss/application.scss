@@ -115,3 +115,7 @@ article {
 .language-markup .token.tag, .language-markup .token.attr-name, .language-markup .token.punctuation {
   color: hsl(33, 53%, 62%);
 }
+
+.error {
+  color: red !important;
+}
