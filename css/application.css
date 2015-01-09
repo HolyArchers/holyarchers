@@ -536,14 +536,17 @@ tbody td {
     margin-top: 2.618rem;
     margin-bottom: 0.7rem; }
   .typography h3 {
-    font-size: 1.618rem;
+    font-size: 2.023rem;
     line-height: 2.023rem;
     margin-bottom: 0.3rem;
-    margin-top: 2.618rem; }
+    margin-top: 3.272rem; }
   .typography h2 + h3 {
     margin-top: 2.023; }
   .typography h4 {
-    margin-bottom: 0.3rem; }
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a41d21; }
   .typography p {
     font-size: 1.618rem;
     line-height: 2.6179375rem;
@@ -561,20 +564,29 @@ tbody td {
     .typography pre code {
       background: transparent; }
   .typography ol, .typography ul {
-    font-size: 2.0225rem;
+    font-size: 1.618rem;
+    font-style: italic;
+    color: #aaa;
     font-weight: 100;
-    border-top: 1px solid #c5bfbf;
-    border-bottom: 1px solid #c5bfbf;
-    padding: 0; }
+    padding: 0;
+    font-family: "abril-text", serif; }
     .typography ol li, .typography ul li {
       border-bottom: 1px solid #e9e7e7;
-      padding: 0.75rem 1.25rem;
+      padding: 0.75rem 2.0225rem;
       list-style: none; }
-    .typography ol ul, .typography ol ol, .typography ul ul, .typography ul ol {
-      font-size: 1rem;
-      border-top: 0;
+    .typography ol li:last-child, .typography ul li:last-child {
       border-bottom: 0; }
+    .typography ol ul, .typography ol ol, .typography ul ul, .typography ul ol {
+      font-size: 1.25rem;
+      border-top: 0;
+      border-bottom: 0;
+      padding: 0; }
       .typography ol ul li, .typography ol ol li, .typography ul ul li, .typography ul ol li {
+        font-style: normal;
+        font-size: 1.618rem;
+        padding-left: 0;
+        color: #333;
+        font-family: "proxima-nova", sans-serif;
         border-bottom: 0;
         list-style: circle;
         margin-left: 2em; }
@@ -698,8 +710,9 @@ tbody td {
   width: 100%; }
 
 .box-main {
-  padding-left: 6.8535625rem;
-  padding-right: 6.8535625rem; }
+  padding-left: 8.5668125rem;
+  padding-right: 8.5668125rem;
+  padding-top: 2.0225rem; }
   @media (max-width: 767px) {
     .box-main {
       padding-left: 2em;
@@ -933,7 +946,7 @@ body.search-active .search-bar {
   color: rgba(255, 255, 255, 0.8); }
 
 .container {
-  max-width: 960px;
+  max-width: 1080px;
   margin: auto;
   word-wrap: break-word; }
   @media (max-width: 767px) {
