@@ -1049,4 +1049,10 @@ article {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
+  color: #ababab; }
+
+.language-markup .token.tag, .language-markup .token.attr-name, .language-markup .token.punctuation {
+  color: #d1a36b; }
+
 /*# sourceMappingURL=application.css.map */

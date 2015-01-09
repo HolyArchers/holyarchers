@@ -107,3 +107,11 @@ article {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
+  color: hsl(0, 0%, 67%);
+}
+
+.language-markup .token.tag, .language-markup .token.attr-name, .language-markup .token.punctuation {
+  color: hsl(33, 53%, 62%);
+}
